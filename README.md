@@ -8,9 +8,9 @@
 
 ## 2. Метод
 
-Коэффициенты Фурье вычислены «вручную» по формулам ДПФ, без использования FFT:
+Коэффициенты Фурье вычислены по формулам ДПФ, без использования FFT:
 
-$$\frac{a_{0}}{2} = \frac{1}{n} \cdot \sum\limits_{j = 0}^{N-1}{T\left(j\right)}$$
+$$\frac{a_{0}}{2} = \frac{1}{N} \cdot \sum\limits_{j = 0}^{N-1}{T\left(j\right)}$$
 $$a_{k} = \frac{2}{N} \cdot \sum\limits_{j = 0}^{N-1}{T\left(j\right) \cdot \cos{\left(\frac{2 \pi k j}{N}\right)}}$$
 $$b_{k} = \frac{2}{N} \cdot \sum\limits_{j = 0}^{N-1}{T\left(j\right) \cdot \sin{\left(\frac{2 \pi k j}{N}\right)}}$$
 $$A_{k} = \sqrt{a_{k}^{2} + b_{k}^{2}}$$
